@@ -1,0 +1,28 @@
+SELECT  TOP 10 intMaestroAuthorisationID, intCardTransactionID, intOriginalTransactionLogID,  intTransactionLogID,
+intTransactionIndicator, intParentMaestroAuthorisationID,biscof, intMessageReasonCodeID,decTransactionAmount, strErrorDescription,
+ * FROM tblMaestroAuthorisations WHERE intMaestroCardID = 17080 Order By 1 Desc
+ 
+ 
+ SELECT PAT.intPendingTransactionID,   MA.intCardTransactionID, MA.intMaestroCardID, MA.intTransactionLogID, MA.intOriginalTransactionLogID, 
+ MA.intMessageReasonCodeID, MA.bIsCOF, PT.bReleased, PT.intAmount, pt.intOutstandingAmount, MA.dteRequestDateTime, * FROM tblPendingTransactions PT
+INNER join tblPendingAuthTransactions PAT on PAT.intPendingTransactionID = PT.intPendingTransactionID
+INNER join tblMaestroAuthorisations MA on MA.intMaestroAuthorisationID = PAT.intMaestroAuthorisationID
+WHERE intAccountID = 975318 AND PT.bReleased = 0 Order By 1 Desc
+
+SELECT TOP 10 ad.intAuthorizationDataID,bIsCOF,intMessageReasonCodeID,intCardFeatureID,intTransactionID,intOriginalTransactionID,intAuthLogID,intOriginalAuthLogID,intResponseCode,strApprovalcode,strDeclinedReason,intCardMessageTypeID,strPAN,* FROM tblAuthorizationData  ad
+inner join tblAuthorizationdatadetail aad on aad.intauthorizationdataid = ad.intauthorizationdataid
+Where intcardid = 72949
+ORDER BY 1 DESC 
+
+
+SELECT  TOP 10 * FROM tblProviderFiles Order By 1 Desc
+--UPDATE tblProviderFiles SET intFileStatusID = 29 WHERE intProviderFileID = 32298
+SELECT  intProviderFileID, intProcessStatusID, intProcessValidationResultID,  
+* FROM    tblMaestroTransactionFinanceAdvices WHERE intProviderFileID = 32298
+SELECT  * FROM    tblAccountBalance WHERE intAccountID = 975318
+
+
+
+
+SELECT  TOP 10 intAuthorizationDataID, intTransactionID, bIsCOF, intMessageReasonCodeID, intTransactionAmount, intParentAuthorizationDataID, 
+intResponseCode,dteRequestedDate, * FROM tblAuthorizationData WHERE intCardID = 172647 Order By 1 Desc

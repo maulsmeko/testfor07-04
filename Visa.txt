@@ -1,0 +1,7 @@
+VTS details
+F3.1 Transaction type
+F2  and F35.01PAN - 4745030800570755
+F52 -  pin data 
+F126.10  - CVV2
+F35.06 - cvv
+35.05 -icvv

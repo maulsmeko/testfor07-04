@@ -1,0 +1,45 @@
+---------------------------QA ---------------------------
+VTS details
+F3.1 Transaction type
+F2  and F35.01PAN - 4745030800570755
+F52 pin data - 
+F126.10 CVV2 - 288 - Before % mark at 103 position
+F35.06 cvv/icvv - 918 - Before ? mark at 195 position
+35.05 - 393 - after ? mark at 200 position --- 
+
+
+
+VTS details
+F3.1 Transaction type
+F2  and F35.01PAN - 4745030800048372
+F52 pin data - 2771
+F126.10 CVV2 - 957 - Before % mark at 103 position
+F35.06 cvv/icvv - 974 - Before ? mark at 195 position
+35.05 - 102 - after ? mark at 200 position
+
+
+
+-------------------Staging---------------------------
+PAN: 4745031450148439
+ICVV - 936
+CVV - 714
+CVV2 - 024
+PIN - 5544
+
+cardid-12974/73190
+Account -191/932308
+4745031450067563
+cvv-804
+icvv-259
+cvv2-282
+
+cardid- 12669/72944
+Account -1953/931923
+4745031450606626
+cvv-242
+icvv-565
+cvv2 - 270
+
+
+
+
